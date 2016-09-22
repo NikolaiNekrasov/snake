@@ -12,6 +12,11 @@ namespace snake
         public int y;
         public char sym;
 
+        public point()
+
+        {
+
+        }
         
         public point(int _x, int _y, char _sym)
         {
