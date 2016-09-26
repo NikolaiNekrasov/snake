@@ -12,7 +12,7 @@ namespace snake
         protected List<point> pList;
 
       
-        public void Drow()
+        public void Draw()
         {
             foreach (point p in pList)
             {

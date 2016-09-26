@@ -17,20 +17,24 @@ namespace snake
             HorizontalLine downLine = new HorizontalLine(0, 78, 24, '+');
             VerticalLine leftLine = new VerticalLine(0, 24, 0, '+');
             VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
-            upLine.Drow();
-            downLine.Drow();
-            leftLine.Drow();
-            rightLine.Drow();
+            upLine.Draw();
+            downLine.Draw();
+            leftLine.Draw();
+            rightLine.Draw();
 
             // отрисовка точки
             point p1 = new point(4, 5, '*');
             Snake snake = new Snake(p1, 4, Direction.RIGHT);
-            snake.Drow();
-
+            snake.Draw();
+        }
+            internal void Move()
+             {
+            throw new NotImplementedException();
+              }
          
 
-            Console.ReadKey();
+            
         }
 
     }
-}
+
