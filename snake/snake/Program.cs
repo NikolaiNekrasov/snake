@@ -26,6 +26,18 @@ namespace snake
             point p1 = new point(4, 5, '*');
             Snake snake = new Snake(p1, 4, Direction.RIGHT);
             snake.Draw();
+
+            while(true)
+            {
+                if(Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HandleKey(key.Key);
+
+                }
+                System.Threading.Thread.Sleep(300);
+                snake.Move();
+            }
         }
             internal void Move()
              {
